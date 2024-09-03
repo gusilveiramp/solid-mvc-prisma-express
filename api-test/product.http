@@ -1,0 +1,36 @@
+###
+GET http://localhost:3333/products
+
+###
+POST http://localhost:3333/products/create
+Content-Type: application/json
+
+{
+  "name": "Produto 1",
+  "price": 10.1
+}
+
+###
+POST http://localhost:3333/products/create
+Content-Type: application/json
+
+{
+  "name": "Produto 2",
+  "price": 20.2
+}
+
+###
+POST http://localhost:3333/products/2f44ce61-5a2c-410f-bf5f-b061690f23de/buy
+Content-Type: application/json
+
+{
+  "amount": 100
+}
+
+###
+POST http://localhost:3333/products/2f44ce61-5a2c-410f-bf5f-b061690f23de/sell
+Content-Type: application/json
+
+{
+  "amount": 25
+}
